@@ -1,0 +1,26 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Suresh Kumar",
+  "homepage": "https://github.com/kumarsuresh1525/book-store#readme",
+  "license": "ISC",
+  "main": "lib/client.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumarsuresh1525/book-store.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/client.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/kumarsuresh1525/book-store/issues"
+  }
+}
