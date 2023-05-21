@@ -1,0 +1,14 @@
+{
+  "port": 8080,
+  "corsDomains": "*",
+  "database": {
+    "host": "localhost",
+    "port": 27017,
+    "name": "bookstore",
+    "options": {
+      "useNewUrlParser": true,
+      "directConnection": true,
+      "retryWrites": false
+    }
+  }
+}
