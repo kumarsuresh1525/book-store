@@ -1,7 +1,8 @@
 node_modules/
 build/
 dist/
-packages/server/dist
+packages/server/dist/
+packages/client/build/
 
 # Logs
 logs
