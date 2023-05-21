@@ -1,11 +1,5 @@
-# `client`
+Basic React boilerplate.
 
-> TODO: description
+Useful when you just want to start coding some React component, but don't need the entire setup that CRA comes with.
 
-## Usage
-
-```
-const client = require('client');
-
-// TODO: DEMONSTRATE API
-```
+Follows steps outlined in [Creating a React app with Webpack](https://jsramblings.com/creating-a-react-app-with-webpack/).
