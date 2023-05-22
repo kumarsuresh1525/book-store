@@ -2,9 +2,9 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 
 import { Model } from 'mongoose';
-import { CreateBookDto } from 'src/dto/book/book.dto';
+import { CreateBookDto } from '../dto/book/book.dto';
 
-import { Book, BookDocument } from 'src/entity/book.entity';
+import { Book, BookDocument } from '../entity/book.entity';
 
 @Injectable()
 export class BookRepository {

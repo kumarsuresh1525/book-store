@@ -1,8 +1,8 @@
 import { Body, Controller, Get, Post, Query } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { CreateBookDto } from 'src/dto/book/book.dto';
-import { BookDto } from 'src/dto/response/book.dto';
-import { BookService } from 'src/service/book.service';
+import { CreateBookDto } from '../dto/book/book.dto';
+import { BookDto } from '../dto/response/book.dto';
+import { BookService } from '../service/book.service';
 
 @Controller('books')
 @ApiTags('Books')
@@ -10,7 +10,7 @@ export class BookController {
   constructor(private readonly bookService: BookService) {}
 
   @Get()
-  getAllBooks(@Query() search) {
+  getAllBooks(@Query() search?: any) {
     return this.bookService.getAllBooks(search);
   }
 
