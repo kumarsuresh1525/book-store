@@ -20,12 +20,16 @@ const setProductRequest = (): IAction => ({
     type: SET_PRODUCT_REQUEST,
   });
 
-export const fetchBooks: any = () => async (
+export const fetchBooks: any = (searchInput?: string) => async (
   dispatch: TDispatch,
 ): Promise<void> => {
   try {
     dispatch(setProductRequest());
-    const resp = await axios.get(GET_BOOKS_URL);
+    let url = GET_BOOKS_URL;
+    if (searchInput) {
+      url = `${GET_BOOKS_URL}?${searchInput}`;
+    }
+    const resp = await axios.get(url);
     dispatch(setProductSuccess(resp.data));
   } catch (error) {
     setError(error);

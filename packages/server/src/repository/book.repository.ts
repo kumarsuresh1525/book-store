@@ -14,15 +14,21 @@ export class BookRepository {
 
   async getAllBooks(filter: any): Promise<Book[]> {
     return await this.bookModel.find({
-      ...(filter.title && { title: { $regex: filter.title, $options: 'i' } }),
-      ...(filter.author && {
-        author: { $regex: filter.author, $options: 'i' },
+      ...(filter.search && {
+        $or: [
+          {
+            author: { $regex: filter.search, $options: 'i' },
+          },
+          {
+            title: { $regex: filter.search, $options: 'i' },
+          },
+        ],
       }),
       ...(filter.rating && {
         rating: { $gte: filter.rating },
       }),
       ...(filter.price && {
-        price: { $gte: filter.price },
+        price: { $gte: filter.minPrice, $lte: filter.maxPrice },
       }),
     });
   }

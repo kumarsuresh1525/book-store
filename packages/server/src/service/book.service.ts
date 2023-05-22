@@ -8,7 +8,7 @@ import { TSearch } from 'src/types/common.type';
 export class BookService {
   constructor(private readonly bookRepository: BookRepository) {}
 
-  async getAllBooks(search: TSearch): Promise<BookDto> {
+  async getAllBooks(search: any): Promise<BookDto> {
     const books: any = await this.bookRepository.getAllBooks(search);
     return books;
   }

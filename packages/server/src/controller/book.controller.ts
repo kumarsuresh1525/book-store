@@ -10,7 +10,7 @@ export class BookController {
   constructor(private readonly bookService: BookService) {}
 
   @Get()
-  getAllBooks(@Query() search: TSearch) {
+  getAllBooks(@Query() search: any) {
     return this.bookService.getAllBooks(search);
   }
 

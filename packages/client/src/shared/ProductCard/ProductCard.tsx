@@ -46,7 +46,7 @@ const ProductCard: React.FC<Props> = ({ product }) => (
 {product.price}
         </Typography>
         <Divider />
-        <Button fullWidth sx={{ marginTop: '10px' }} variant="contained" color="secondary">Add to Cart</Button>
+        <Button fullWidth sx={{ marginTop: '10px' }} variant="contained" color="primary">Add to Cart</Button>
       </CardActions>
     </Card>
   );
