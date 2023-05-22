@@ -4,7 +4,7 @@ export type TProduct = {
     imgUrl: string;
     price: number;
     rating: number;
-    _id: string;
+    id: string;
 }
 export type ProductListProps = {
     list: TProduct[];

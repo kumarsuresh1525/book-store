@@ -28,7 +28,7 @@ export const ratingsData: IRatingData[] = [
   },
 ];
 
-export const stringifiedQueryParam = (queryParam): any =>
+export const stringifiedQueryParam = (queryParam): string =>
   qs.stringify(queryParam, {
     encodeValuesOnly: true,
   });

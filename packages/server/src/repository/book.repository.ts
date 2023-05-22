@@ -12,7 +12,7 @@ export class BookRepository {
     @InjectModel(Book.name) private readonly bookModel: Model<BookDocument>,
   ) {}
 
-  async getAllBooks(filter: any): Promise<Book[]> {
+  async getAllBooks(filter): Promise<Book[]> {
     return await this.bookModel.find({
       ...(filter.search && {
         $or: [
