@@ -14,6 +14,10 @@ brew doctor
 brew install node
 ```
 
+## Tech used
+Frontend - Reactjs
+Backend - Nestjs, Mongodb
+
 ## Installation
 
 ```bash
