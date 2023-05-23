@@ -10,7 +10,8 @@
     "build:client": "yarn client build:dev",
     "build:server": "yarn server build",
     "start:client": "yarn client start:dev",
-    "start:server": "yarn server start:dev"
+    "start:server": "yarn server start:dev",
+    "fake-data": "yarn server fake-data"
   },
   "devDependencies": {
     "@types/node": "^20.2.1",
