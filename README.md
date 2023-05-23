@@ -15,7 +15,7 @@ brew install node
 ```
 
 ## Tech used
-Frontend - Reactjs
+Frontend - Reactjs,
 Backend - Nestjs, Mongodb
 
 ## Installation
