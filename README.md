@@ -39,8 +39,11 @@ $ npm run start:client
 # build server
 $ npm run build:server
 
-# start client
+# start server
 $ npm run start:server
+
+# To add dummy data run below command
+$ npm run fake-data
 
 ``
 
