@@ -2,11 +2,11 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import configuration from 'src/configuration';
-import { BookController } from 'src/controller/book.controller';
-import { Book, BookSchema } from 'src/entity/book.entity';
+import { BookController } from 'src/controller/book/book.controller';
+import { Book, BookSchema } from 'src/entity/book/book.entity';
 import { HealthController } from 'src/health.controller';
-import { BookRepository } from 'src/repository/book.repository';
-import { BookService } from 'src/service/book.service';
+import { BookRepository } from 'src/repository/book/book.repository';
+import { BookService } from 'src/service/book/book.service';
 
 @Module({
   imports: [

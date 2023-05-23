@@ -1,10 +1,10 @@
-import { BookService } from '../service/book.service';
+import { BookService } from '../../service/book/book.service';
 import { BookController } from './book.controller';
-import { BookRepository } from '../repository/book.repository';
-import { BookDocument } from '../entity/book.entity';
+import { BookRepository } from '../../repository/book/book.repository';
+import { BookDocument } from '../../entity/book/book.entity';
 import { Model } from 'mongoose';
-import { BookDto } from '../dto/response/book.dto';
-import { CreateBookDto } from '../dto/book/book.dto';
+import { BookDto } from '../../dto/response/book.dto';
+import { CreateBookDto } from '../../dto/book/book.dto';
 
 describe('BookController', () => {
   let bookController: BookController;

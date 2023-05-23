@@ -4,6 +4,14 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "client": "yarn workspace client",
+    "server": "yarn workspace server",
+    "build:client": "yarn client build:dev",
+    "build:server": "yarn server build",
+    "start:client": "yarn client start:dev",
+    "start:server": "yarn server start:dev"
+  },
   "devDependencies": {
     "@types/node": "^20.2.1",
     "lerna": "^6.6.2",

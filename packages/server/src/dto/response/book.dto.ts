@@ -1,4 +1,4 @@
-import { Book } from 'src/entity/book.entity';
+import { Book } from 'src/entity/book/book.entity';
 
 export class BookDto {
   title: string;

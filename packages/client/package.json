@@ -1,5 +1,5 @@
 {
-  "name": "bookstore",
+  "name": "client",
   "version": "1.0.0",
   "description": "Search and buy book",
   "main": "index.js",
@@ -13,6 +13,7 @@
     "eslint": "eslint 'src/**/*.tsx' && eslint 'src/**/*.ts'",
     "eslint-fix": "eslint 'src/**/*.tsx' --fix && eslint 'src/**/*.ts' --fix",
     "prettier": "prettier --write src",
+    "test": "jest --config ./config/jest/jest.config.js",
     "cy:run": "cypress run"
   },
   "keywords": [],

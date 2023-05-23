@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { CreateBookDto } from '../dto/book/book.dto';
-import { BookDto } from '../dto/response/book.dto';
-import { BookWrapperDto } from '../dto/response/bookWrapper.dto';
-import { BookRepository } from '../repository/book.repository';
+import { CreateBookDto } from '../../dto/book/book.dto';
+import { BookDto } from '../../dto/response/book.dto';
+import { BookWrapperDto } from '../../dto/response/bookWrapper.dto';
+import { BookRepository } from '../../repository/book/book.repository';
 
 @Injectable()
 export class BookService {

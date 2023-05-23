@@ -15,8 +15,6 @@ module.exports = {
         },
     },
     moduleNameMapper: {
-        '@meesho/crystal':
-            '<rootDir>/../../node_modules/@meesho/crystal/crystal.esm.js',
         '^@typings/(.*)$': '<rootDir>/../../src/client/typings/$1',
         '^@store/(.*)$': '<rootDir>/../../src/client/store/$1',
         '^@constants/(.*)$': '<rootDir>/../../src/client/constants/$1',

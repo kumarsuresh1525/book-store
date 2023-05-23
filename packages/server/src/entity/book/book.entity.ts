@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-import { BaseSchema } from './base.entity';
+import { BaseSchema } from '../base.entity';
 
 export type BookDocument = Book & Document;
 

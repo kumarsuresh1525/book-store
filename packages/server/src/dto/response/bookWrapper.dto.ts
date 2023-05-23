@@ -1,4 +1,4 @@
-import { Book } from 'src/entity/book.entity';
+import { Book } from 'src/entity/book/book.entity';
 import { BookDto } from './book.dto';
 
 export class BookWrapperDto {
